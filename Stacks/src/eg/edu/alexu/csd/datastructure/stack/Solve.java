@@ -200,7 +200,6 @@ public class Solve implements IExpressionEvaluator {
 		s.push(z);
 	}
 		double x=(double)s.peek();
-		System.out.println(x);
 		int a=(int)x;
 		return a;
 	}
