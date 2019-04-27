@@ -3,7 +3,10 @@ import java.util.*;
 import java.lang.*;
 public class Mainclass {
 	public static void main(String[] args) {
+		
 		Scanner scan=new Scanner(System.in);
+		Solve solve=new Solve();
+		String s=new String();
 		System.out.println("First -UI for Stacks Task");
 		System.out.println("Second - UI for application");
 		System.out.println("Enter the number of your Choosen UI : 1 for First , 2-For second ");
@@ -48,13 +51,13 @@ public class Mainclass {
 		
 		}
 		else {
-		Solve solve=new Solve();
-		String s=new String();
+		
 		System.out.println("Second - UI for application");
 		System.out.println("negative numbers in postfix will appear with a (-) before it");
 		System.out.println("you should enter your expression in a form similar to: a + b - c");
-	System.out.println("Enter your infix expression");
-	s=scan.next();
+	System.out.println("Enter your infix expression"+scan.nextLine());
+	
+	s=scan.nextLine();
 	System.out.println("Your postfix expression:");
 	System.out.println(solve.infixToPostfix(s));
 	System.out.println("Evaluation of the expression");
