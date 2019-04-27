@@ -71,7 +71,7 @@ public class Solve implements IExpressionEvaluator {
 				f=1;
 		 if(c=='-'&& expression.charAt(i+1)>='0'&& expression.charAt(i+1)<='9'&&f!=1)
 		 {
-			
+
 			
 			out+="(-)";
 			i++;
@@ -130,11 +130,13 @@ public class Solve implements IExpressionEvaluator {
 			i++;
 			prev=c;
 		}
+		
 		if(flag!=0)
 		{
 			System.out.println("Invalid");
 			throw new RuntimeException();
 		}
+		
 		while(!s.isEmpty())
 		{
 			
@@ -144,7 +146,8 @@ public class Solve implements IExpressionEvaluator {
 		}
 		return out;
 	}
-
+	//((((3 * (1 + (4 + 6))) + (2 + 8))  * 5) + (4 * (7 + 2)))
+	//((((3*(1+(4+6)))+(2+8))^5)+(4*(7+2)))
 	@Override
 	public int evaluate(String expression)
 	{
