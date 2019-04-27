@@ -1,6 +1,7 @@
 package eg.edu.alexu.csd.datastructure.stack;
 
 public class Solve implements IExpressionEvaluator {
+
 	private String extract(String s,int i)
 	{
 		String out=new String();
